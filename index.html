@@ -354,7 +354,7 @@ const CONTENT = {
     words: ["celebrate.", "you."],                 // the two giant words at the start
     fullPhoto: "m2",                               // the big full-screen photo right after the words (use a sharp, high-quality one)
     hero: "Another year of you, and I’m still the luckiest person I know.", // text over the full-screen photo
-    stack: ["hero", "m2", "m1", "m4"],               // 4 photos that pile up on each other
+    stack: ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"],               // 4 photos that pile up on each other
     // Seven message moments. Each text appears next to a photo.
     // The photo sits on the left, then the right, alternating.
     // Add or remove lines to change the count (keep photos[] the same length).
@@ -368,7 +368,7 @@ const CONTENT = {
       "Whatever comes next, I want you beside me."
     ],
     // Which photo goes beside each text above (same order):
-    photos: ["m4", "m3", "m5", "m1", "hero", "m2", "m4"],
+    photos: ["m4", "m3", "m5", "m1", "image7.jpg", "m2", "m4"],
     videoCaption: "Some moments are too good to stay still."
     // The scroll-controlled video uses the FIRST item of "videos" below.
   },
@@ -376,7 +376,7 @@ const CONTENT = {
   // ---------- SCENE 3: Our Memories (polaroid gallery + lightbox) ----------
   // One block per photo. src = photo name or path. date and desc are optional.
   memories: [
-    { src: "m1", title: "Dancing under the lights", caption: "A twirl beneath the lanterns.", date: "", desc: "" },
+    { src: "image2.jpg", title: "Dancing under the lights", caption: "A twirl beneath the lanterns.", date: "", desc: "" },
     { src: "m2", title: "Lit by the night",         caption: "Golden light, and that quiet look.", date: "", desc: "" },
     { src: "m3", title: "Soaked and smiling",       caption: "Not a care in the world.", date: "", desc: "" },
     { src: "m4", title: "That smile",               caption: "The one that makes my day.", date: "", desc: "" },
@@ -643,7 +643,7 @@ mb.onclick=()=>{if(!audio){audio=new Audio(CONTENT.music);audio.loop=true;audio.
    PHOTO LIBRARY - your photos, stored as text. You do not need to edit this.
    Names: hero, m1, m2, m3, m4, m5, final  (use these names in CONTENT above)
    ===================================================================== */
-const IMG={"hero": "image1.jpg", "m1": "image1.jpg", "m2": "image1.jpg", "m3": "image4.jpg", "m4": "image5.jpg", "m5": "image6.jpg", "final": "image7.jpg"};
+const IMG={"hero": "image1.jpg", "m1": "image1.jpg", "m2": "image7.jpg", "m3": "image4.jpg", "m4": "image5.jpg", "m5": "image6.jpg", "final": "image7.jpg"};
 </script>
 </body>
 </html>
